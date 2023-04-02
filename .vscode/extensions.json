@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "bierner.lit-html",
+    "runem.lit-plugin",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "shopify.theme-check-vscode",
+    "dbaeumer.vscode-eslint"
+  ]
+}

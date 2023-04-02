@@ -1,0 +1,24 @@
+<title>{{ page_title }}</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="{{ page_description | escape }}">
+<link rel="canonical" href="{{ canonical_url }}">
+<link rel="preconnect" href="https://cdn.shopify.com" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+{%- render 'css-variables' -%}
+
+{%- render 'css-typography' -%}
+
+
+<script>
+  window.MoneyFormat = {{ shop.money_with_currency_format | json }};
+</script>
+
+{%- comment -%}
+  Any script storing a global to the window
+  needs to be run without async or defer
+{%- endcomment -%}
+
+<script src="{{ 'mango-island.min.js' | asset_url }}" defer="defer"></script>
+

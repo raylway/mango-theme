@@ -1,0 +1,6 @@
+[development]
+ignores = ".shopifyignores"
+password = "mypassword"
+store = "mystore.myshopify.com"
+theme_id = 13234234234
+working_dir = "theme"
